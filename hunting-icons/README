@@ -4,11 +4,10 @@ Icons must not be larger than 24x24. They will be scaled to 24x24 by CalTopo.
 
 Ideally, they should be SVG but can be PNG (note: GiMP doesn't support creating SVG)
 
-Each icon is available in black and color.
+Each icon is available in black. Black icons can be used for custom icons and colorized within CalTopo. Custom icons are a CalTopo Pro subscription feature.
 
-* Black can be used for custom icons and colorized within CalTopo. Custom icons are a CalTopo Pro subscription feature.
-* Color are for Icon URLs for those without Pro subscriptions; the color is fixed within the icon and cannot be changed within CalTopo. Icon URLs are the github URL with the query string `?raw=true`.
+You can copy these icons and color them directly within the .png. This is useful for creating icons using the Icon URLs in CalTopo. You only need to use Icon URLs if you do not have a Pro subscription. In this case, the color would be fixed within the icon .png and cannot be changed within CalTopo. Icon URLs would be the github URL with the query string `?raw=true`.
 
-There are some free icons available here: https://mapicons.mapsmarker.com/category/markers/
+There are also some free icons available here: https://mapicons.mapsmarker.com/category/markers/
 
-You can ask ChatCPT or Gemini to try to generate icons.
+You can ask ChatCPT or Gemini to try to generate icons as well.
