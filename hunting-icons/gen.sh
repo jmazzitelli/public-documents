@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-BASE_RAW="https://raw.githubusercontent.com/jmazzitelli/public-documents/main/hunting-icons/black"
-LOCAL_DIR="./black"   # Path to the local clone of the 'black' directory
+BASE_RAW="https://raw.githubusercontent.com/jmazzitelli/public-documents/main/hunting-icons"
+LOCAL_DIR="."   # Path to the local clone
 OUTPUT="index.html"
 
 cat > "$OUTPUT" <<EOF
@@ -27,7 +27,6 @@ find "$LOCAL_DIR" -type d | while read -r dir; do
     # List PNG files in this directory
     files=$(find "$dir" -maxdepth 1 -type f -name "*.png" | sort)
     if [ -n "$files" ]; then
-        # Remove leading ./black/ for display
         category=${dir#./}
         echo "<h2>$category</h2>" >> "$OUTPUT"
         echo "<div class=\"icon-grid\">" >> "$OUTPUT"
